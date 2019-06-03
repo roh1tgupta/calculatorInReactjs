@@ -1,0 +1,30 @@
+.calculator {
+  margin: 2%;
+  .keypad-row, .display-row{
+    width: 33%;
+    display: flex;
+    .keypad {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      margin-right: -1px;
+      margin-bottom: -1px;
+      flex: 1;
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+    .operator {
+      text-align: right;
+    }
+  }
+  .display-row {
+    .keypad {
+      text-align: right;
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+  }
+}
